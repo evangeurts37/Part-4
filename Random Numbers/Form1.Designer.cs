@@ -41,7 +41,7 @@
             // lblInstruction
             // 
             this.lblInstruction.AutoSize = true;
-            this.lblInstruction.Location = new System.Drawing.Point(78, 33);
+            this.lblInstruction.Location = new System.Drawing.Point(49, 30);
             this.lblInstruction.Name = "lblInstruction";
             this.lblInstruction.Size = new System.Drawing.Size(197, 13);
             this.lblInstruction.TabIndex = 0;
@@ -49,21 +49,25 @@
             // 
             // btnInt
             // 
-            this.btnInt.Location = new System.Drawing.Point(49, 171);
+            this.btnInt.BackColor = System.Drawing.Color.White;
+            this.btnInt.Location = new System.Drawing.Point(49, 160);
             this.btnInt.Name = "btnInt";
             this.btnInt.Size = new System.Drawing.Size(75, 23);
             this.btnInt.TabIndex = 1;
             this.btnInt.Text = "Integer";
-            this.btnInt.UseVisualStyleBackColor = true;
+            this.btnInt.UseVisualStyleBackColor = false;
+            this.btnInt.Click += new System.EventHandler(this.btnInt_Click);
             // 
             // btnDouble
             // 
-            this.btnDouble.Location = new System.Drawing.Point(183, 181);
+            this.btnDouble.BackColor = System.Drawing.Color.White;
+            this.btnDouble.Location = new System.Drawing.Point(158, 160);
             this.btnDouble.Name = "btnDouble";
             this.btnDouble.Size = new System.Drawing.Size(75, 23);
             this.btnDouble.TabIndex = 2;
             this.btnDouble.Text = "Double";
-            this.btnDouble.UseVisualStyleBackColor = true;
+            this.btnDouble.UseVisualStyleBackColor = false;
+            this.btnDouble.Click += new System.EventHandler(this.btnDouble_Click);
             // 
             // lblMin
             // 
@@ -86,12 +90,13 @@
             // lblAnswer
             // 
             this.lblAnswer.AutoSize = true;
-            this.lblAnswer.Location = new System.Drawing.Point(102, 225);
+            this.lblAnswer.Location = new System.Drawing.Point(117, 204);
             this.lblAnswer.Name = "lblAnswer";
             this.lblAnswer.Size = new System.Drawing.Size(49, 13);
             this.lblAnswer.TabIndex = 5;
             this.lblAnswer.Text = "message";
             this.lblAnswer.UseMnemonic = false;
+            this.lblAnswer.Visible = false;
             // 
             // txtMin
             // 
@@ -111,7 +116,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(377, 280);
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.ClientSize = new System.Drawing.Size(315, 254);
             this.Controls.Add(this.txtMax);
             this.Controls.Add(this.txtMin);
             this.Controls.Add(this.lblAnswer);
