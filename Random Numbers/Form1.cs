@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Random_Numbers
 {
-    public partial class Form1 : Form
+    public partial class RandomNumbers : Form
     {
-        public Form1()
+        public RandomNumbers()
         {
             InitializeComponent();
         }
